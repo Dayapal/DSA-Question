@@ -65,7 +65,6 @@ const array = [
      
       console.log(`${rank} ${array[i][0]}`);
     } else {
-     
       rank = i + 1; 
       console.log(`${rank} ${array[i][0]}`);
     }

@@ -5,12 +5,9 @@ function isValidParentheses(s) {
 
     for (let char of s) { 
         if (char === '(' || char === '{' || char === '[') {
-        
-            
             stack.push(char);
         } 
         else if (char === ')' || char === '}' || char === ']') {
-          
             if (stack.length === 0){
                 console.log("unbalanced")
                 return

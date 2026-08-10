@@ -22,8 +22,7 @@ query = [
       
         console.log("No Food")
         
-      }else{
-        
+      }else{  
         console.log(stack[stack.length-1])
         stack.pop();
         

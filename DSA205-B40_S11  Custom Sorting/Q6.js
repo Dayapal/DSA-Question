@@ -18,8 +18,7 @@ function sortWithIndex(arr){
             }
         }
     }
-
-
+    
     let sortedIndex = [];
     for(let i = 0; i < n; i++){
         sortedIndex.push(indexArr[i][1]);
@@ -31,8 +30,6 @@ function sortWithIndex(arr){
     console.log()
 
 }
-
-
 
 
 function runProgram(input) {
