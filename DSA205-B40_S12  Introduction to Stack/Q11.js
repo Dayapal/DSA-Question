@@ -2,7 +2,6 @@
 
 function isValidParentheses(s) {
     let stack = []; 
-
     for (let char of s) { 
         if (char === '(' || char === '{' || char === '[') {
             stack.push(char);
@@ -12,9 +11,7 @@ function isValidParentheses(s) {
                 console.log("unbalanced")
                 return
             };
-
             let top = stack[stack.length - 1];  
-
             if (
                 (char === ')' && top === '(') ||
                 (char === '}' && top === '{') ||
@@ -32,15 +29,12 @@ function isValidParentheses(s) {
        
     }
 
- 
+
      if(stack.length === 0){
         console.log("balanced")
      }else{
         console.log("unbalanced")
      }
 }
-
-
-// let str  = '[one[two[three[four[five[six[seven[eight[nine[ten]]]]]]]]]]';
 let str = "(((()))a)"
 isValidParentheses(str)
